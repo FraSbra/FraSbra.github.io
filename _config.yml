@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # Currently available options are "default", "air"
+site_theme               : "air" # Currently available options are "default", "air"
 title                    : "Your Name / Site Title"
 title_separator          : "-"
 name                     : &name "Your Name"
@@ -27,10 +27,10 @@ author:
   name             : "Francesco Sbrana"
   pronouns         : # example: "she/her"  
   bio              : "Currently working on this website :)"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  location         : "Torino / Pisa, Italy"
+  employer         : "Collegio Carlo Alberto / Università di Torino"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "francesco.sbrana@carloalberto.org" 
 
   # Academic websites
   academia         : # URL
