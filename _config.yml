@@ -24,9 +24,9 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Francesco Test Sbrana"
+  name             : "Francesco Sbrana"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Currently working on this website :)"
   location         : "Earth"
   employer         : "Red Brick University"
   uri              : # URL
