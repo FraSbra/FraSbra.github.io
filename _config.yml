@@ -23,7 +23,7 @@ repository               : "FraSbra/francescosbrana.github.io" # the repository 
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "Foto.png"
   name             : "Francesco Sbrana"
   pronouns         : # example: "she/her"  
   bio              : "Currently working on this website :)"
