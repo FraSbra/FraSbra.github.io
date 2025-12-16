@@ -20,13 +20,12 @@ Work experience
 ======
 * Research Assistant
   * 2025 - 2026 &rarr; Elena Esposito and Andrea Gallice
-    * Dehumanization and Violence
-  *    2025     &rarr; Elena Esposito and Ada Gonzàlez-Torres
-    * Coding tasks
-  *    2023     &rarr; Carmine Guerriero
-    * Data Collection
+      * Dehumanization and Violence project
+  * 2025 &rarr; Elena Esposito and Ada Gonzàlez-Torres
+      * Coding tasks
+  * 2023 &rarr; Carmine Guerriero
+      * Data Collection
   
-
 
 {% comment %}
 Publications
