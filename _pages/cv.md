@@ -19,22 +19,22 @@ Education
 Work experience
 ======
 * Research Assistant
-  * 2025 - 2026 &rarr Elena Esposito and Andrea Gallice
+  * 2025 - 2026 &rarr; Elena Esposito and Andrea Gallice
     * Dehumanization and Violence
-  *    2025     &rarr Elena Esposito and Ada Gonzàlez-Torres
+  *    2025     &rarr; Elena Esposito and Ada Gonzàlez-Torres
     * Coding tasks
-  *    2023     &rarr Carmine Guerriero
+  *    2023     &rarr; Carmine Guerriero
     * Data Collection
   
 
 
-<!--> Start of the commented code. The last arrow ends it
+{% comment %}
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
---> 
+{% endcomment %}
   
 Teaching
 ======
