@@ -18,26 +18,23 @@ Education
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Research Assistant
+  * 2025 - 2026 &rarr Elena Esposito and Andrea Gallice
+    * Dehumanization and Violence
+  *    2025     &rarr Elena Esposito and Ada Gonzàlez-Torres
+    * Coding tasks
+  *    2023     &rarr Carmine Guerriero
+    * Data Collection
   
-[Publications
+
+
+<!--> Start of the commented code. The last arrow ends it
+Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>]: #
+  {% endfor %}</ul>
+--> 
   
 Teaching
 ======
