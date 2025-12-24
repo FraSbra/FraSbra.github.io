@@ -6,7 +6,8 @@ redirect_from:
   - /about/
   - /about.html
 ---
-## Hello :)
+
+**Hello :)**
 
 Currently working on this website ;)
 
