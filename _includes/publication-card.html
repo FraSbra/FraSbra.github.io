@@ -1,0 +1,25 @@
+<!-- Publication card.
+     Pass a publication item with `include.item`. -->
+{% assign item = include.item %}
+<article class="record-card">
+  <p class="record-card__eyebrow">{{ item.status | default: "Research item" | replace: "-", " " }}</p>
+  <h3 class="record-card__title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+
+  {% if item.venue or item.date %}
+    <p class="record-card__meta">
+      {% if item.venue %}<span>{{ item.venue }}</span>{% endif %}
+      {% if item.date %}<span>{{ item.date | date: "%Y" }}</span>{% endif %}
+    </p>
+  {% endif %}
+
+  {% if item.excerpt %}
+    <p class="record-card__excerpt">{{ item.excerpt | markdownify | strip_html }}</p>
+  {% endif %}
+
+  <div class="record-card__links">
+    {% if item.paperurl %}<a href="{{ item.paperurl }}">Paper</a>{% endif %}
+    {% if item.slidesurl %}<a href="{{ item.slidesurl }}">Slides</a>{% endif %}
+    {% if item.bibtexurl %}<a href="{{ item.bibtexurl }}">BibTeX</a>{% endif %}
+    {% if item.link %}<a href="{{ item.link }}">External link</a>{% endif %}
+  </div>
+</article>

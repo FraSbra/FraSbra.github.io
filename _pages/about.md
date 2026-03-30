@@ -1,26 +1,23 @@
 ---
 permalink: /
+layout: home
 title: ""
-author_profile: true
-redirect_from: 
+description: "Academic website of Francesco Sbrana, PhD student in economics at Collegio Carlo Alberto and the University of Turin."
+redirect_from:
   - /about/
   - /about.html
 ---
 
-**Hello :)**
+## About
 
-Currently working on this website ;)
-
-Hi!
 I am a PhD student at Collegio Carlo Alberto and at the University of Turin, working under the supervision of [Elena Esposito](https://www.elenaesposito.com/).
 
-I am an applied-microeconomist specializing in Crime and Conflicts.
+My research is in applied microeconomics, with a particular focus on crime and conflict.
 
-I hold a M.Sc. degree in Economics and Econometrics from the University of Bologna.
+## Education
 
+I hold an M.Sc. degree in Economics and Econometrics from the University of Bologna.
 
+## Contact
 
-
-You can find my CV here: (waiting for update)
-
-Contact: francesco.sbrana@carloalberto.org
+The best way to reach me is by email at [francesco.sbrana@carloalberto.org](mailto:francesco.sbrana@carloalberto.org).

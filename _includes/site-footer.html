@@ -1,0 +1,17 @@
+<!-- Site footer.
+     Edit _data/profile.yml for contact links and affiliation text. -->
+{% assign profile = site.data.profile %}
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div>
+      <p class="site-footer__title">{{ profile.name }}</p>
+      <p class="site-footer__text">{{ profile.role }}</p>
+    </div>
+
+    <div class="site-footer__links">
+      <a href="{{ profile.links.email }}">Email</a>
+      <a href="{{ profile.links.cv | relative_url }}">CV</a>
+      <a href="{{ profile.links.github }}">GitHub</a>
+    </div>
+  </div>
+</footer>

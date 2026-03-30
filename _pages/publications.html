@@ -1,36 +1,20 @@
 ---
-layout: archive
+layout: single
 title: "Publications"
 permalink: /publications/
-author_profile: true
+author_profile: false
+description: "Publications and published research by Francesco Sbrana."
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+Published and accepted research outputs are listed here. For a broader research overview, including working papers, see the [research page]({{ '/research/' | relative_url }}).
 
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
+{% assign published_work = site.publications | where: "status", "published" | sort: "date" | reverse %}
+{% if published_work.size > 0 %}
+  <div class="record-grid">
+    {% for item in published_work %}
+      {% include publication-card.html item=item %}
     {% endfor %}
-  {% endfor %}
+  </div>
 {% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
+  <p class="empty-state">No publication entries have been added yet.</p>
 {% endif %}
-
-
-

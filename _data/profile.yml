@@ -1,0 +1,26 @@
+# Primary profile data used across the rebuilt site.
+# This keeps person-specific content out of _config.yml so it stays easy to edit.
+
+name: "Francesco Sbrana"
+role: "PhD Student in Economics"
+tagline: "Applied microeconomics with a focus on crime and conflict."
+location: "Torino / Pisa, Italy"
+email: "francesco.sbrana@carloalberto.org"
+portrait: "/images/Foto.png"
+
+affiliations:
+  - "Collegio Carlo Alberto"
+  - "University of Turin"
+
+bio_short: "PhD student at Collegio Carlo Alberto and the University of Turin, supervised by Elena Esposito."
+bio_long: "I am an applied microeconomist specializing in crime and conflict. I hold an M.Sc. degree in Economics and Econometrics from the University of Bologna."
+
+research_interests:
+  - "Crime"
+  - "Conflict"
+  - "Applied microeconomics"
+
+links:
+  email: "mailto:francesco.sbrana@carloalberto.org"
+  github: "https://github.com/FraSbra"
+  cv: "/cv/"

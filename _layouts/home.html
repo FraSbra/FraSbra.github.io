@@ -1,0 +1,53 @@
+---
+layout: default
+---
+<!-- Homepage layout.
+     Edit _data/profile.yml for the hero content and _pages/about.md for the body sections. -->
+{% assign profile = site.data.profile %}
+
+<section class="home-hero">
+  <div class="home-hero__inner">
+    <div class="home-hero__content">
+      <p class="home-hero__eyebrow">{{ profile.role }}</p>
+      <h1>{{ profile.name }}</h1>
+      <p class="home-hero__lede">{{ profile.bio_short }}</p>
+      <p>{{ profile.bio_long }}</p>
+
+      <div class="button-row">
+        <a class="button button--primary" href="{{ '/research/' | relative_url }}">Research</a>
+        <a class="button" href="{{ profile.links.cv | relative_url }}">CV</a>
+        <a class="button" href="{{ profile.links.email }}">Email</a>
+      </div>
+
+      <div class="home-hero__meta">
+        {% for affiliation in profile.affiliations %}
+          <span>{{ affiliation }}</span>
+        {% endfor %}
+        <span>{{ profile.location }}</span>
+      </div>
+    </div>
+
+    <div class="home-hero__aside">
+      <img class="home-hero__portrait" src="{{ profile.portrait | relative_url }}" alt="Portrait of {{ profile.name }}">
+
+      <div class="info-card">
+        <p class="info-card__eyebrow">Research interests</p>
+        <ul class="info-card__list">
+          {% for interest in profile.research_interests %}
+            <li>{{ interest }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-shell page-shell--compact">
+  <div class="page-shell__inner">
+    <article class="content-card">
+      <div class="prose">
+        {{ content }}
+      </div>
+    </article>
+  </div>
+</section>

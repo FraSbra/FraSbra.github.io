@@ -1,0 +1,26 @@
+<!-- Reusable profile panel.
+     Edit _data/profile.yml for the displayed portrait, text, and links. -->
+{% assign profile = site.data.profile %}
+<aside class="profile-panel">
+  <img class="profile-panel__image" src="{{ profile.portrait | relative_url }}" alt="Portrait of {{ profile.name }}">
+
+  <div class="profile-panel__body">
+    <p class="profile-panel__eyebrow">{{ profile.role }}</p>
+    <h2 class="profile-panel__name">{{ profile.name }}</h2>
+    <p class="profile-panel__tagline">{{ profile.tagline }}</p>
+
+    {% if profile.affiliations %}
+      <ul class="profile-panel__list">
+        {% for affiliation in profile.affiliations %}
+          <li>{{ affiliation }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    <div class="profile-panel__meta">
+      <span>{{ profile.location }}</span>
+      <a href="{{ profile.links.email }}">Email</a>
+      <a href="{{ profile.links.github }}">GitHub</a>
+    </div>
+  </div>
+</aside>

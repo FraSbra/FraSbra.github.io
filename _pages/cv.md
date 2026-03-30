@@ -1,43 +1,29 @@
 ---
-layout: archive
+layout: single
 title: "CV"
 permalink: /cv/
-author_profile: true
+author_profile: false
+description: "Curriculum vitae of Francesco Sbrana."
 redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+## Education
 
-Education
-======
-* PhD in Economics, Collegio Carlo Alberto and University of Turin (2024 - Current)
-* MSc in Economics and Econometrics, University if Bologna, (2022-2024)
-* BSc in Business Administration, University of Pisa, (2019 - 2022)
-  * Erasmus+ at ISCTE Business School, Lisbon (Fall 2021/2022)
+- **PhD in Economics**, Collegio Carlo Alberto and University of Turin, 2024-present
+- **M.Sc. in Economics and Econometrics**, University of Bologna, 2022-2024
+- **B.Sc. in Business Administration**, University of Pisa, 2019-2022
+  - Erasmus+ at ISCTE Business School, Lisbon, Fall 2021/2022
 
-Work experience
-======
-* Research Assistant
-  * 2025 - 2026 &rarr; Elena Esposito and Andrea Gallice
-      * Dehumanization and Violence project
-  * 2025 &rarr; Elena Esposito and Ada Gonzàlez-Torres
-      * Coding tasks
-  * 2023 &rarr; Carmine Guerriero
-      * Data Collection
-  
+## Research Experience
 
-{% comment %}
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-{% endcomment %}
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
+- **Research Assistant**, Elena Esposito and Andrea Gallice, 2025-2026
+  - Dehumanization and Violence project
+- **Research Assistant**, Elena Esposito and Ada Gonzalez-Torres, 2025
+  - Coding tasks
+- **Research Assistant**, Carmine Guerriero, 2023
+  - Data collection
+
+## Notes
+
+A downloadable PDF version can be added later in the `files/` folder and linked from this page.

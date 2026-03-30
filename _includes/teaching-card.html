@@ -1,0 +1,17 @@
+<!-- Teaching card.
+     Pass a teaching item with `include.item`. -->
+{% assign item = include.item %}
+<article class="record-card">
+  <p class="record-card__eyebrow">{{ item.type | default: "Teaching" }}</p>
+  <h3 class="record-card__title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+
+  <p class="record-card__meta">
+    {% if item.venue %}<span>{{ item.venue }}</span>{% endif %}
+    {% if item.location %}<span>{{ item.location }}</span>{% endif %}
+    {% if item.date %}<span>{{ item.date | date: "%Y" }}</span>{% endif %}
+  </p>
+
+  {% if item.excerpt %}
+    <p class="record-card__excerpt">{{ item.excerpt | markdownify | strip_html }}</p>
+  {% endif %}
+</article>

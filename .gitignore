@@ -18,3 +18,8 @@ package-lock.json
 
 # Ignore folders related to IDEs
 .vscode/
+
+# Keep local Codex/OpenAI workflow files out of GitHub pushes.
+AGENTS.md
+AGENTS.override.md
+.codex/
