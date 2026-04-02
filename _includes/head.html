@@ -5,7 +5,40 @@
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta http-equiv="cleartype" content="on">
-<meta name="theme-color" content="#0f766e">
+<meta name="theme-color" content="#f4f1e8" data-light="#f4f1e8" data-dark="#11161c">
+<meta name="color-scheme" content="light dark">
+
+<script>
+  // Set the preferred theme before CSS loads to avoid a flash of the wrong palette.
+  (function () {
+    const storageKey = "site-theme";
+    const root = document.documentElement;
+    const themeMeta = document.querySelector('meta[name="theme-color"]');
+    let storedTheme = null;
+
+    try {
+      storedTheme = window.localStorage.getItem(storageKey);
+    } catch (error) {
+      storedTheme = null;
+    }
+
+    const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const activeTheme = storedTheme === "light" || storedTheme === "dark"
+      ? storedTheme
+      : (systemPrefersDark ? "dark" : "light");
+
+    root.dataset.theme = activeTheme;
+    root.style.colorScheme = activeTheme;
+
+    if (themeMeta) {
+      const themeColor = activeTheme === "dark" ? themeMeta.dataset.dark : themeMeta.dataset.light;
+
+      if (themeColor) {
+        themeMeta.setAttribute("content", themeColor);
+      }
+    }
+  })();
+</script>
 
 {% include seo.html %}
 

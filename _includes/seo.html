@@ -1,3 +1,5 @@
+<!-- Global SEO metadata.
+     Edit _config.yml for sitewide values and this file only for metadata structure changes. -->
 {% assign profile = site.data.profile %}
 {% assign default_description = page.description | default: site.description %}
 {% assign page_title = page.title | strip %}
@@ -42,8 +44,10 @@
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
+      "@id": {{ site.url | append: "/#website" | jsonify }},
       "name": {{ site.title | jsonify }},
-      "url": {{ site.url | jsonify }},
+      "alternateName": {{ site.url | remove: "https://" | remove: "http://" | jsonify }},
+      "url": {{ site.url | append: "/" | jsonify }},
       "description": {{ site.description | jsonify }}
     }
   </script>
