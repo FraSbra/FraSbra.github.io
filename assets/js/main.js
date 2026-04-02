@@ -4,7 +4,6 @@
 const navToggle = document.querySelector(".site-nav-toggle");
 const nav = document.querySelector(".site-nav");
 const themeToggle = document.querySelector(".theme-toggle");
-const themeToggleLabel = document.querySelector(".theme-toggle__label");
 const themeMeta = document.querySelector('meta[name="theme-color"]');
 const root = document.documentElement;
 const storageKey = "site-theme";
@@ -27,17 +26,15 @@ function writeStoredTheme(theme) {
 }
 
 function updateThemeButton(theme) {
-  if (!themeToggle || !themeToggleLabel) {
+  if (!themeToggle) {
     return;
   }
 
   const nextTheme = theme === "dark" ? "light" : "dark";
-  const nextThemeLabel = nextTheme === "dark" ? "Dark theme" : "Light theme";
 
   themeToggle.setAttribute("aria-pressed", String(theme === "dark"));
   themeToggle.setAttribute("aria-label", `Switch to ${nextTheme} theme`);
   themeToggle.setAttribute("title", `Switch to ${nextTheme} theme`);
-  themeToggleLabel.textContent = nextThemeLabel;
 }
 
 function updateThemeColor(theme) {
