@@ -12,16 +12,20 @@ layout: default
       <p class="home-hero__eyebrow">{{ profile.role }}</p>
       {%- endcomment -%}
       <h1>{{ profile.name }}</h1>
+      {%- comment -%}
       <p class="home-hero__lede">{{ profile.bio_short }}</p>
+      {%- endcomment -%}
       <p>{{ profile.bio_long }}</p>
 
+      {%- comment -%}
       <div class="button-row">
         <a class="button button--primary" href="{{ '/research/' | relative_url }}">Research</a>
         <a class="button" href="{{ profile.links.cv | relative_url }}">CV</a>
         <a class="button" href="{{ profile.links.email }}">Email</a>
       </div>
+      {%- endcomment -%}
 
-      <div class="home-hero__meta">
+      <div class="home-hero__meta" style="margin-top: 2rem;">
         {% for affiliation in profile.affiliations %}
           <span>{{ affiliation }}</span>
         {% endfor %}
