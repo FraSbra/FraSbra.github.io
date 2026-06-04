@@ -8,7 +8,9 @@ layout: default
 <section class="home-hero">
   <div class="home-hero__inner">
     <div class="home-hero__content">
+      {%- comment -%}
       <p class="home-hero__eyebrow">{{ profile.role }}</p>
+      {%- endcomment -%}
       <h1>{{ profile.name }}</h1>
       <p class="home-hero__lede">{{ profile.bio_short }}</p>
       <p>{{ profile.bio_long }}</p>

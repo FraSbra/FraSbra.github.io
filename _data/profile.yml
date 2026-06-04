@@ -2,9 +2,9 @@
 # This keeps person-specific content out of _config.yml so it stays easy to edit.
 
 name: "Francesco Sbrana"
-role: "PhD Student in Economics"
+role: ""
 tagline: "Applied microeconomics with a focus on crime and conflict."
-location: "Torino / Pisa, Italy"
+location: "Turin, Italy"
 email: "francesco.sbrana@carloalberto.org"
 portrait: "/images/Foto.png"
 
