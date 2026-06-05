@@ -3,6 +3,17 @@
 /* Main site stylesheet.
    Keep global tokens near the top and reusable component rules grouped below. */
 
+/* Local display font.
+   Put the licensed font file at assets/fonts/datatype/Datatype.woff2.
+   If that file is missing, headings safely fall back to Georgia. */
+@font-face {
+  font-family: "Datatype";
+  src: url("../fonts/datatype/Datatype.woff2") format("woff2");
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --page-bg: #f4f1e8;
   --page-glow-left: rgba(15, 118, 110, 0.12);

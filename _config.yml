@@ -76,7 +76,6 @@ exclude:
   - assets/css/academicons.css
   - assets/css/academicons.min.css
   - assets/css/collapse.css
-  - assets/fonts
   - assets/webfonts
   - "*.sublime-project"
   - "*.sublime-workspace"
