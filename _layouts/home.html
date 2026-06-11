@@ -15,7 +15,9 @@ layout: default
       {%- comment -%}
       <p class="home-hero__lede">{{ profile.bio_short }}</p>
       {%- endcomment -%}
-      <p>{{ profile.bio_long }}</p>
+      <div class="home-hero__lede">
+      {{ profile.bio_long | markdownify }}
+      </div>
 
       {%- comment -%}
       <div class="button-row">
