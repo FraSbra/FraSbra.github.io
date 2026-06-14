@@ -14,10 +14,11 @@ layout: default
       <h1>{{ profile.name }}</h1>
       {%- comment -%}
       <p class="home-hero__lede">{{ profile.bio_short }}</p>
+      {%- endcomment -%}
       <div class="home-hero__lede">
       {{ profile.bio_long | markdownify }}
       </div>
-      {%- endcomment -%}
+      
 
       {%- comment -%}
       <div class="button-row">

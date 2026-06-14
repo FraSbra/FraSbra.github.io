@@ -8,12 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-## About
-
-I am a PhD student at Collegio Carlo Alberto and at the University of Turin, working under the supervision of [Elena Esposito](https://www.elenaesposito.com/) and [Juan Vargas](https://sites.google.com/site/juanfvargas/).
-
-My research focuses on economics of crime and development economics, with particular emphasis on Latin America and the consequences of strict law enforcement.
-
 <div style="height: 5rem;"></div>
 
 ## Contact
