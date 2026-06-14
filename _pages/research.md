@@ -6,8 +6,6 @@ author_profile: false
 description: "Research overview, working papers, and publications."
 ---
 
-I am an applied microeconomist specializing in crime and conflict.
-
 ## Working Papers
 
 {% assign working_papers = site.publications | where: "status", "working-paper" | sort: "date" | reverse %}
@@ -18,7 +16,7 @@ I am an applied microeconomist specializing in crime and conflict.
     {% endfor %}
   </div>
 {% else %}
-  <p class="empty-state">Working paper entries will appear here once they are added to <code>_publications/</code>.</p>
+  <p class="empty-state"></p>
 {% endif %}
 
 ## Publications
@@ -31,5 +29,5 @@ I am an applied microeconomist specializing in crime and conflict.
     {% endfor %}
   </div>
 {% else %}
-  <p class="empty-state">Published work will appear here once it is added to <code>_publications/</code>.</p>
+  <p class="empty-state"></p>
 {% endif %}
