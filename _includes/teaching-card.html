@@ -13,9 +13,11 @@
     {% if item.date %}<span>{{ item.date | date: "%Y" }}</span>{% endif %}
   </p>
 
-  {% if item.excerpt %}
-    <p class="record-card__excerpt">{{ item.excerpt | markdownify | strip_html }}</p>
-  {% endif %}
+{% if item.excerpt %}
+  <div class="record-card__excerpt">
+    {{ item.excerpt | markdownify }}
+  </div>
+{% endif %}
 
   {% if item.slides %}
     <div class="record-card__links">
