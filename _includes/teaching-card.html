@@ -1,5 +1,7 @@
 <!-- Teaching card.
-     Pass a teaching item with `include.item`. -->
+     Pass a teaching item with `include.item`.
+     Add slide links through the item's `slides` list; each list entry accepts
+     an optional `label` and a required `url`. -->
 {% assign item = include.item %}
 <article class="record-card">
   <p class="record-card__eyebrow">{{ item.type | default: "Teaching" }}</p>
@@ -13,5 +15,17 @@
 
   {% if item.excerpt %}
     <p class="record-card__excerpt">{{ item.excerpt | markdownify | strip_html }}</p>
+  {% endif %}
+
+  {% if item.slides %}
+    <div class="record-card__links">
+      {% for slide in item.slides %}
+        {% if slide.url %}
+          <a href="{{ slide.url }}">
+            {% if slide.label %}{{ slide.label }}{% else %}Slides {{ forloop.index }}{% endif %}
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
   {% endif %}
 </article>
